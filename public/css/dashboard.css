@@ -1,0 +1,143 @@
+/* Algemene instellingen */
+.main-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    background-color: #f9fafb;
+    padding: 4rem 0;
+}
+
+.content-container {
+    max-width: 1120px;
+    margin: 0 auto;
+    padding: 0 1.5rem;
+}
+
+/* Header stijl */
+.header-title {
+    font-weight: 600;
+    font-size: 2rem;
+    color: #1f2937;
+    text-align: center;
+    margin-bottom: 3rem;
+}
+
+/* Hero Sectie */
+#hero-section {
+    background: linear-gradient(to right, #3b82f6, #2dd4bf, #10b981);
+    box-shadow: 0 10px 15px rgba(0, 0, 0, 0.1);
+    border-radius: 0.5rem;
+    margin-bottom: 4rem;
+    height: 100%;
+    min-height: 300px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.hero-content {
+    padding: 4rem;
+    text-align: center;
+    color: white;
+}
+
+.hero-title {
+    font-size: 3rem;
+    font-weight: 800;
+}
+
+.hero-subtitle {
+    margin-top: 1.5rem;
+    font-size: 1.25rem;
+}
+
+.hero-buttons {
+    margin-top: 2.5rem;
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+}
+
+.hero-button {
+    display: inline-block;
+    background-color: white;
+    color: #2563eb;
+    font-weight: bold;
+    padding: 0.75rem 1.5rem;
+    border-radius: 9999px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s;
+    text-decoration: none;
+}
+
+.hero-button:hover {
+    transform: scale(1.05);
+}
+
+.blue-button {
+    color: #2563eb;
+}
+
+.green-button {
+    color: #059669;
+}
+
+/* Features Sectie */
+.features-grid {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    gap: 3rem;
+}
+
+@media (min-width: 768px) {
+    .features-grid {
+        grid-template-columns: repeat(3, 1fr);
+    }
+}
+
+.feature-box {
+    background-color: white;
+    box-shadow: 0 10px 15px rgba(0, 0, 0, 0.1);
+    border-radius: 0.5rem;
+    padding: 2rem;
+    text-align: center;
+    transition: transform 0.3s;
+}
+
+.feature-box:hover {
+    transform: scale(1.05);
+}
+
+.feature-icon {
+    display: inline-block;
+    padding: 1rem;
+    border-radius: 9999px;
+    margin-bottom: 1.5rem;
+}
+
+.blue-icon {
+    background-color: #bfdbfe;
+    color: #3b82f6;
+}
+
+.green-icon {
+    background-color: #d1fae5;
+    color: #10b981;
+}
+
+.yellow-icon {
+    background-color: #fef3c7;
+    color: #f59e0b;
+}
+
+.feature-title {
+    font-size: 1.5rem;
+    font-weight: 600;
+    color: #1f2937;
+    margin-bottom: 1rem;
+}
+
+.feature-text {
+    color: #4b5563;
+}
