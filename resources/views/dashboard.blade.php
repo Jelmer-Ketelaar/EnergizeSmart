@@ -12,14 +12,24 @@
             <!-- Hero Section -->
             <div id="hero-section">
                 <div class="hero-content">
+
                     <h1 class="hero-title">Welcome to Energizesmart</h1>
                     <p class="hero-subtitle">Monitor and optimize your energy usage with ease and efficiency.</p>
+
                     <div class="hero-buttons">
-                        <a href="{{ url('/daily/' . Auth::user()->id) }}" class="hero-button blue-button">
+                        <a href="{{ route('energy.daily', ['userId' => Auth::user()->id]) }}"
+                           class="hero-button blue-button">
                             View Today's Usage
                         </a>
-                        <a href="{{ url('/compare-weeks/' . Auth::user()->id) }}" class="hero-button green-button">
+                        <a href="{{ route('energy.compare', ['userId' => Auth::user()->id]) }}"
+                           class="hero-button green-button">
                             Compare Weekly Usage
+                        </a>
+                        <a href="{{ route('login') }}" class="hero-button blue-button">
+                            Log in to view today's usage
+                        </a>
+                        <a href="{{ route('login') }}" class="hero-button green-button">
+                            Log in to compare weekly usage
                         </a>
                     </div>
                 </div>
@@ -32,7 +42,8 @@
                         <!-- SVG Icon -->
                     </div>
                     <h3 class="feature-title">Real-Time Monitoring</h3>
-                    <p class="feature-text">Keep track of your energy consumption in real-time, ensuring efficiency and savings.</p>
+                    <p class="feature-text">Keep track of your energy consumption in real-time, ensuring efficiency and
+                        savings.</p>
                 </div>
 
                 <div class="feature-box">
@@ -40,7 +51,8 @@
                         <!-- SVG Icon -->
                     </div>
                     <h3 class="feature-title">Historical Data</h3>
-                    <p class="feature-text">Analyze your energy usage trends over time with comprehensive historical data.</p>
+                    <p class="feature-text">Analyze your energy usage trends over time with comprehensive historical
+                        data.</p>
                 </div>
 
                 <div class="feature-box">
