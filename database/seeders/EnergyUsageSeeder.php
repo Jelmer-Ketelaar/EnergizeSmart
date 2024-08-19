@@ -11,19 +11,19 @@ class EnergyUsageSeeder extends Seeder
     public function run(): void
     {
         EnergyUsage::create([
-            'user_id' => 1,
+            'user_id' => 2,
             'timestamp' => Carbon::now()->subDays(7), // Een week geleden
             'energy_consumed' => 30.00
         ]);
 
         EnergyUsage::create([
-            'user_id' => 1,
+            'user_id' => 2,
             'timestamp' => Carbon::now()->subDays(1), // Gisteren
             'energy_consumed' => 25.50
         ]);
 
         EnergyUsage::create([
-            'user_id' => 1,
+            'user_id' => 2,
             'timestamp' => Carbon::now(), // Vandaag
             'energy_consumed' => 20.75
         ]);
