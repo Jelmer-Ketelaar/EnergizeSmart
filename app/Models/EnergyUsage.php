@@ -25,4 +25,14 @@ class EnergyUsage extends Model
     {
         return \Carbon\Carbon::parse($this->timestamp)->format('M d, Y H:i');
     }
+
+    public function scopeForDate($query, $date)
+    {
+        return $query->whereDate('timestamp', $date);
+    }
+
+    public function scopeForDateRange($query, $startDate, $endDate)
+    {
+        return $query->whereBetween('timestamp', [$startDate, $endDate]);
+    }
 }
