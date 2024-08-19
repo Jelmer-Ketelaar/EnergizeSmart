@@ -18,7 +18,7 @@
                     <tbody class="text-gray-700">
                         @foreach ($data as $entry)
                             <tr class="border-b hover:bg-gray-100">
-                                <td class="py-3 px-4">{{ \Carbon\Carbon::parse($entry->timestamp)->format('M d, Y H:i') }}</td>
+                                <td class="py-3 px-4">{{ $entry->formatted_timestamp }}</td>
                                 <td class="py-3 px-4">{{ number_format($entry->energy_consumed, 2) }} kWh</td>
                             </tr>
                         @endforeach
